@@ -1,0 +1,13 @@
+{
+  "name": "dcc-crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "main": "node index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^5.2.1"
+  }
+}
