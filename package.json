@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "main": "node index.js"
+    "crawl": "node index.js"
   },
   "keywords": [],
   "license": "ISC",
