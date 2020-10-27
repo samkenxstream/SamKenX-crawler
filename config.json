@@ -1,0 +1,16 @@
+{
+  "entrypoint": "https://developer.chrome.com",
+  "categories": [
+    {
+      "selector": "div.api[itemprop=\"articleBody\"]",
+      "id": "reference"
+    },
+    {
+      "selector": "article.article-content",
+      "id": "guides"
+    }
+  ],
+  "ignore": [
+    "https://developer.chrome.com/extensions/examples"
+  ]
+}

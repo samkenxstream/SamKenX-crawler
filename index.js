@@ -23,6 +23,13 @@ function findNewTargets(candidates, existingTargets, visited) {
   return Array.from(realTargets);
 }
 
+// TODO(kayce): Record ignored files?
+function shouldIgnore(target) {
+  const check = config.ignore.filter(item => target.includes(item)).length > 0;
+  if (check) console.info(`ignoring ${target}`);
+  return check;
+}
+
 async function getLinks(page) {
   try {
     let targets = new Set();
@@ -32,7 +39,9 @@ async function getLinks(page) {
       const href = await link.getProperty('href');
       const value = await href.jsonValue();
       if (isInvalidFileType(value)) continue;
+      // TODO(kayce): Refactor next two checks into a single function.
       if (value.includes(config.entrypoint)) {
+        if (shouldIgnore(value)) continue;
         const url = new URL(value);
         let pathname = url.pathname.replace(/\.html$/, '');
         pathname = pathname.replace(/index$/, '');
