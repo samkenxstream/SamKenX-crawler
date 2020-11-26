@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "crawl": "node index.js"
+    "crawl": "node index.js",
+    "webfu": "cp configs/webfu.json config.json; npm run crawl;"
   },
   "keywords": [],
   "license": "ISC",
