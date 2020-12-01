@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "crawl": "node index.js",
-    "webfu": "cp configs/webfu.json config.json; npm run crawl;"
+    "webfu": "cp configs/webfu.json config.json; npm run crawl;",
+    "dcc": "cp configs/dcc.json config.json; npm run crawl;"
   },
   "keywords": [],
   "license": "ISC",

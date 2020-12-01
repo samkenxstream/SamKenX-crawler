@@ -1,5 +1,5 @@
 {
-  "entrypoint": "https://developer.chrome.com",
+  "entrypoint": "https://developer.chrome.com/apps",
   "categories": [
     {
       "selector": "div.api[itemprop=\"articleBody\"]",
@@ -7,7 +7,7 @@
     },
     {
       "selector": "article.article-content",
-      "id": "guides"
+      "id": "targets"
     }
   ],
   "ignore": [
